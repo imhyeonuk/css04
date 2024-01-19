@@ -6,6 +6,12 @@ nav {
   list-style-type: none;
 }
 
+.navmenu {
+  display: flex;/*컨테이너 내부의 요소들을 가로로 정렬하기 위해 flexbox를 사용*/
+  justify-content: space-between; /* Flex 아이템들을 가로 축에서 양 끝으로 분산 */
+  align-items: center;
+}
+
 .navbar {
   position: fixed; /* 처음에 flex 사용하지 않아서 제대로 작용X */
   top: 0;
@@ -21,24 +27,32 @@ nav {
 }
 .navbar ol {
   display: flex;
-  justify-content: space-between;
-  margin: 15px;
 }
 
 .logo {
+  display: flex;/*컨테이너 내부의 요소들을 가로로 정렬하기 위해 flexbox를 사용*/
+  justify-content:start; /* Flex 아이템들을 가로 축에서 양 끝으로 분산 */
+  align-items: center;
   display: inline-block;
   color: rgb(77, 125, 159);
 }
 
 .brandlogo {
-  display: inline-block;
+  display: flex;/*컨테이너 내부의 요소들을 가로로 정렬하기 위해 flexbox를 사용*/
+  justify-content: space-between; /* Flex 아이템들을 가로 축에서 양 끝으로 분산 */
+  align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
+  min-width: 6.25rem;
 }
 
 .search, .member {
-  display: inline-block;
-  /* padding-left: 30%; */
+  display: flex;/*컨테이너 내부의 요소들을 가로로 정렬하기 위해 flexbox를 사용*/
+  justify-content: space-between; /* Flex 아이템들을 가로 축에서 양 끝으로 분산 */
+  align-items: center;
+}
+.member {
+  justify-content:end;
 }
 
 .slideshow-container {
